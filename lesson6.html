@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6: Semantic HTML | HTML Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lesson 6: Semantic HTML</h1>
+        <p>Using meaningful elements for better structure and accessibility</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#lesson">Lesson</a></li>
+            <li><a href="#exercise">Exercise</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="lesson">
+            <h2>Semantic HTML Elements</h2>
+            <p>Semantic elements clearly describe their meaning to both browser and developer.</p>
+            
+            <div class="concept">
+                <h3>Why Semantic HTML?</h3>
+                <ul>
+                    <li>Better accessibility (screen readers)</li>
+                    <li>Improved SEO (search engines understand content)</li>
+                    <li>Easier to maintain (clear structure)</li>
+                    <li>Future compatibility (standards evolve)</li>
+                </ul>
+            </div>
+            
+            <div class="concept">
+                <h3>Common Semantic Elements</h3>
+                <div class="code-example">
+                    <pre><code>&lt;header&gt; - Introductory content
+&lt;nav&gt; - Navigation links
+&lt;main&gt; - Main content of the document
+&lt;section&gt; - Thematic grouping of content
+&lt;article&gt; - Self-contained composition
+&lt;aside&gt; - Content indirectly related to main content
+&lt;footer&gt; - Footer for its nearest ancestor
+&lt;figure&gt; - Self-contained content like images
+&lt;figcaption&gt; - Caption for a figure
+&lt;time&gt; - Machine-readable date/time
+&lt;mark&gt; - Highlighted text
+&lt;details&gt; - Disclosure widget
+&lt;summary&gt; - Summary for details element</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Document Structure Example</h3>
+                <div class="code-example">
+                    <pre><code>&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Website Title&lt;/h1&gt;
+        &lt;nav&gt;...&lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Article Title&lt;/h2&gt;
+            &lt;section&gt;
+                &lt;h3&gt;Section Heading&lt;/h3&gt;
+                &lt;p&gt;Content...&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/article&gt;
+        
+        &lt;aside&gt;
+            &lt;h2&gt;Related Links&lt;/h2&gt;
+            &lt;ul&gt;...&lt;/ul&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;Copyright information&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Accessibility Considerations</h3>
+                <p>Semantic HTML improves accessibility:</p>
+                <ul>
+                    <li>Use proper heading hierarchy (&lt;h1&gt; to &lt;h6&gt;)</li>
+                    <li>Add alt text to images</li>
+                    <li>Use ARIA attributes when needed</li>
+                    <li>Ensure proper contrast ratios</li>
+                    <li>Make interactive elements keyboard-navigable</li>
+                </ul>
+            </div>
+            
+            <div class="navigation-buttons">
+                <a href="lesson5.html" class="button">Previous Lesson</a>
+                <a href="exercise6.html" class="button exercise">Go to Exercise</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 HTML Step-by-Step Course</p>
+    </footer>
+</body>
+</html>

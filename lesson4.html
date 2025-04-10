@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4: Lists and Tables | HTML Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lesson 4: Lists and Tables</h1>
+        <p>Creating organized content with lists and tables</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#lesson">Lesson</a></li>
+            <li><a href="#exercise">Exercise</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="lesson">
+            <h2>Working with Lists and Tables</h2>
+            
+            <div class="concept">
+                <h3>Unordered Lists</h3>
+                <p>&lt;ul&gt; creates a bulleted list. Each item is wrapped in &lt;li&gt; tags.</p>
+                <div class="code-example">
+                    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Ordered Lists</h3>
+                <p>&lt;ol&gt; creates a numbered list. You can change numbering with the <code>type</code> attribute.</p>
+                <div class="code-example">
+                    <pre><code>&lt;ol type="1"&gt; &lt;!-- Default: 1, 2, 3 --&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="A"&gt; &lt;!-- A, B, C --&gt;
+    &lt;li&gt;Item A&lt;/li&gt;
+    &lt;li&gt;Item B&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="I"&gt; &lt;!-- Roman numerals --&gt;
+    &lt;li&gt;Step I&lt;/li&gt;
+    &lt;li&gt;Step II&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Description Lists</h3>
+                <p>&lt;dl&gt; creates a list of terms and descriptions.</p>
+                <div class="code-example">
+                    <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Nested Lists</h3>
+                <p>You can nest lists inside other lists:</p>
+                <div class="code-example">
+                    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Fruits
+        &lt;ul&gt;
+            &lt;li&gt;Apples&lt;/li&gt;
+            &lt;li&gt;Oranges&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Vegetables
+        &lt;ul&gt;
+            &lt;li&gt;Carrots&lt;/li&gt;
+            &lt;li&gt;Broccoli&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Basic Tables</h3>
+                <p>Tables are created with &lt;table&gt;, rows with &lt;tr&gt;, headers with &lt;th&gt;, and cells with &lt;td&gt;.</p>
+                <div class="code-example">
+                    <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Bob&lt;/td&gt;
+        &lt;td&gt;32&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Table Structure Elements</h3>
+                <p>For better organization, tables can include:</p>
+                <div class="code-example">
+                    <pre><code>&lt;table&gt;
+    &lt;caption&gt;Monthly Sales&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;&lt;th&gt;Month&lt;/th&gt;&lt;th&gt;Sales&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;&lt;td&gt;January&lt;/td&gt;&lt;td&gt;$1000&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;td&gt;$1000&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <a href="lesson3.html" class="button">Previous Lesson</a>
+                <a href="exercise4.html" class="button exercise">Go to Exercise</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 HTML Step-by-Step Course</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: HTML Basics | HTML Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lesson 1: HTML Basics</h1>
+        <p>Understanding the fundamental structure of HTML documents</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#lesson">Lesson</a></li>
+            <li><a href="#exercise">Exercise</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="lesson">
+            <h2>HTML Document Structure</h2>
+            <p>Every HTML document follows a basic structure that the browser understands. Here are the essential components:</p>
+            
+            <div class="code-example">
+                <h3>Basic HTML Template</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Your content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+            
+            <h3>Key Elements Explained</h3>
+            <div class="concept">
+                <h4>&lt;!DOCTYPE html&gt;</h4>
+                <p>This declaration defines the document type and version of HTML (HTML5 in this case).</p>
+            </div>
+            
+            <div class="concept">
+                <h4>&lt;html&gt;</h4>
+                <p>The root element that wraps all content on the page. The <code>lang</code> attribute specifies the language.</p>
+            </div>
+            
+            <div class="concept">
+                <h4>&lt;head&gt;</h4>
+                <p>Contains meta-information about the document, like its title, character set, and links to stylesheets.</p>
+            </div>
+            
+            <div class="concept">
+                <h4>&lt;body&gt;</h4>
+                <p>Contains all the visible content of the web page - text, images, links, etc.</p>
+            </div>
+            
+            <div class="navigation-buttons">
+                <a href="index.html" class="button">Back to Home</a>
+                <a href="exercise1.html" class="button exercise">Go to Exercise</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 HTML Step-by-Step Course</p>
+    </footer>
+</body>
+</html>

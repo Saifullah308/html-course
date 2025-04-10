@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3: Links and Images | HTML Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lesson 3: Links and Images</h1>
+        <p>Adding hyperlinks and images to your web pages</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#lesson">Lesson</a></li>
+            <li><a href="#exercise">Exercise</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="lesson">
+            <h2>Working with Links and Images</h2>
+            
+            <div class="concept">
+                <h3>Hyperlinks</h3>
+                <p>The &lt;a&gt; (anchor) element creates hyperlinks. The <code>href</code> attribute specifies the destination.</p>
+                <div class="code-example">
+                    <pre><code>&lt;!-- External link --&gt;
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+
+&lt;!-- Internal link --&gt;
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+
+&lt;!-- Link to email --&gt;
+&lt;a href="mailto:contact@example.com"&gt;Email Us&lt;/a&gt;
+
+&lt;!-- Link to phone --&gt;
+&lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;</code></pre>
+                </div>
+                <p>Use <code>target="_blank"</code> to open links in a new tab.</p>
+            </div>
+            
+            <div class="concept">
+                <h3>Images</h3>
+                <p>The &lt;img&gt; element embeds images. It's a self-closing tag with required <code>src</code> and <code>alt</code> attributes.</p>
+                <div class="code-example">
+                    <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;
+&lt;img src="images/logo.png" alt="Company logo" width="200" height="100"&gt;</code></pre>
+                </div>
+                <p>The <code>alt</code> attribute provides alternative text for screen readers and when images can't load.</p>
+            </div>
+            
+            <div class="concept">
+                <h3>Image Formats</h3>
+                <p>Common web image formats:</p>
+                <ul>
+                    <li><strong>JPEG</strong> - Best for photographs (lossy compression)</li>
+                    <li><strong>PNG</strong> - Best for graphics with transparency (lossless)</li>
+                    <li><strong>GIF</strong> - Simple animations and low-color graphics</li>
+                    <li><strong>SVG</strong> - Vector graphics that scale without quality loss</li>
+                    <li><strong>WebP</strong> - Modern format with superior compression</li>
+                </ul>
+            </div>
+            
+            <div class="concept">
+                <h3>Linking Images</h3>
+                <p>You can wrap an image in an anchor tag to make it clickable:</p>
+                <div class="code-example">
+                    <pre><code>&lt;a href="large-image.jpg"&gt;
+    &lt;img src="thumbnail.jpg" alt="Click to enlarge"&gt;
+&lt;/a&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <a href="lesson2.html" class="button">Previous Lesson</a>
+                <a href="exercise3.html" class="button exercise">Go to Exercise</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 HTML Step-by-Step Course</p>
+    </footer>
+</body>
+</html>

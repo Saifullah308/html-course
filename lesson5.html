@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5: Forms and Input | HTML Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lesson 5: Forms and Input</h1>
+        <p>Creating interactive forms to collect user input</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#lesson">Lesson</a></li>
+            <li><a href="#exercise">Exercise</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="lesson">
+            <h2>Creating Forms in HTML</h2>
+            
+            <div class="concept">
+                <h3>Basic Form Structure</h3>
+                <p>The &lt;form&gt; element wraps all form controls. Key attributes:</p>
+                <ul>
+                    <li><code>action</code> - URL to send form data</li>
+                    <li><code>method</code> - HTTP method (GET or POST)</li>
+                    <li><code>name</code> - Name to identify the form</li>
+                </ul>
+                <div class="code-example">
+                    <pre><code>&lt;form action="/submit" method="post" name="contact"&gt;
+    &lt;!-- Form controls go here --&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Input Elements</h3>
+                <p>The &lt;input&gt; element is versatile with many types:</p>
+                <div class="code-example">
+                    <pre><code>&lt;!-- Text input --&gt;
+&lt;input type="text" name="username" placeholder="Enter username"&gt;
+
+&lt;!-- Password field --&gt;
+&lt;input type="password" name="pwd"&gt;
+
+&lt;!-- Email --&gt;
+&lt;input type="email" name="email"&gt;
+
+&lt;!-- Number --&gt;
+&lt;input type="number" name="age" min="18" max="99"&gt;
+
+&lt;!-- Date --&gt;
+&lt;input type="date" name="birthday"&gt;
+
+&lt;!-- Checkbox --&gt;
+&lt;input type="checkbox" name="subscribe" id="subscribe"&gt;
+&lt;label for="subscribe"&gt;Subscribe to newsletter&lt;/label&gt;
+
+&lt;!-- Radio buttons --&gt;
+&lt;input type="radio" name="gender" id="male" value="male"&gt;
+&lt;label for="male"&gt;Male&lt;/label&gt;
+&lt;input type="radio" name="gender" id="female" value="female"&gt;
+&lt;label for="female"&gt;Female&lt;/label&gt;
+
+&lt;!-- File upload --&gt;
+&lt;input type="file" name="photo"&gt;
+
+&lt;!-- Submit button --&gt;
+&lt;input type="submit" value="Send Form"&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Other Form Elements</h3>
+                <p>Additional elements for forms:</p>
+                <div class="code-example">
+                    <pre><code>&lt;!-- Textarea for multiline text --&gt;
+&lt;textarea name="message" rows="4" cols="50"&gt;Default text&lt;/textarea&gt;
+
+&lt;!-- Dropdown select --&gt;
+&lt;select name="country"&gt;
+    &lt;option value="us"&gt;United States&lt;/option&gt;
+    &lt;option value="ca"&gt;Canada&lt;/option&gt;
+    &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;!-- Multi-select --&gt;
+&lt;select name="colors" multiple&gt;
+    &lt;option&gt;Red&lt;/option&gt;
+    &lt;option&gt;Green&lt;/option&gt;
+    &lt;option&gt;Blue&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;!-- Button --&gt;
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+
+&lt;!-- Fieldset and legend --&gt;
+&lt;fieldset&gt;
+    &lt;legend&gt;Contact Information&lt;/legend&gt;
+    &lt;!-- Form fields here --&gt;
+&lt;/fieldset&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept">
+                <h3>Form Validation</h3>
+                <p>HTML5 provides built-in validation attributes:</p>
+                <div class="code-example">
+                    <pre><code>&lt;input type="text" required&gt; &lt;!-- Required field --&gt;
+&lt;input type="email" required&gt; &lt;!-- Must be valid email --&gt;
+&lt;input type="number" min="1" max="10"&gt; &lt;!-- Number range --&gt;
+&lt;input type="text" minlength="5" maxlength="10"&gt; &lt;!-- Length --&gt;
+&lt;input type="text" pattern="[A-Za-z]{3}"&gt; &lt;!-- Regex pattern --&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <a href="lesson4.html" class="button">Previous Lesson</a>
+                <a href="exercise5.html" class="button exercise">Go to Exercise</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 HTML Step-by-Step Course</p>
+    </footer>
+</body>
+</html>
